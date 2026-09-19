@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Notify"
+  short_description: "Reliable Codex task notifications with durable retries"
+  default_prompt: "Use $codex-notify to deliver and track this authorized notification."

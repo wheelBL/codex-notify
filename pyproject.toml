@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-notify"
+version = "0.1.0"
+description = "Durable notifications for Codex tasks, with retries and explicit acknowledgments"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["websocket-client==1.8.0", "supervisor==4.3.0"]
+classifiers = ["Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+codex-notify = "codex_notify.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codex_notify*"]
